@@ -13,6 +13,7 @@ body {
   }
   #hero {
     color: $c-white;
+    text-align: center;
     h1 {
       @include fontsize(100);
       font-weight: 700;
@@ -20,4 +21,22 @@ body {
   }
 
 
+}
+
+
+
+
+
+.container {
+  @include container-fixed;
+
+  @media (min-width: $screen-sm-min) {
+    width: $container-sm;
+  }
+  @media (min-width: $screen-md-min) {
+    width: $container-md;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
+  }
 }

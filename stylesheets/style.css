@@ -451,11 +451,32 @@ body {
     background: url(../../images/background.jpg) no-repeat center center fixed;
     background-size: cover; }
   body #hero {
-    color: #ffffff; }
+    color: #ffffff;
+    text-align: center; }
     body #hero h1 {
       font-size: 100px;
       font-size: 6.25rem;
       font-weight: 700; }
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+  .container:before, .container:after {
+    content: " ";
+    display: table; }
+  .container:after {
+    clear: both; }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px; } }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px; } }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px; } }
 
 img {
   max-width: 100%;
