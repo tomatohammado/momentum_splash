@@ -3,6 +3,7 @@
 }
 
 body {
+  font-family: 'Poppins', sans-serif;
   .page-wrapper {
     margin: 0;
     padding: 15px;
@@ -11,7 +12,11 @@ body {
     background-size: cover;
   }
   #hero {
-    color: $c-grey;
+    color: $c-white;
+    h1 {
+      @include fontsize(100);
+      font-weight: 700;
+    }
   }
 
 
