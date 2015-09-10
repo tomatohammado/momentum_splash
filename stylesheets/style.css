@@ -439,10 +439,17 @@ body {
   text-transform: uppercase;
   color: white; }
 
-body {
-  background: #00F; }
-  body #hero {
-    color: #ffffff; }
+* {
+  box-sizing: border-box; }
+
+body .page-wrapper {
+  margin: 0;
+  padding: 15px;
+  border: 20px solid #ffffff;
+  background: url(../../images/background.jpg) no-repeat center center fixed;
+  background-size: cover; }
+body #hero {
+  color: #ccc; }
 
 img {
   max-width: 100%;

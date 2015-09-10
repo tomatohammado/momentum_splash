@@ -1,7 +1,21 @@
-body {
-  background: #00F;
+* {
+  box-sizing: border-box;
+}
+html, body {
+  // height: 100%;
+}
 
-  #hero {
-    color: $c-white;
+body {
+  .page-wrapper {
+    margin: 0;
+    padding: 15px;
+    border: 20px solid $c-white;
+    background: url(../../images/background.jpg) no-repeat center center fixed;
+    background-size: cover;
   }
+  #hero {
+    color: $c-grey;
+  }
+
+
 }
