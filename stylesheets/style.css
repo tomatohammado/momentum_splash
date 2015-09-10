@@ -440,9 +440,9 @@ body {
   color: white; }
 
 body {
-  background: #0F0; }
-  body h1 {
-    text-decoration: underline; }
+  background: #00F; }
+  body #hero {
+    color: #ffffff; }
 
 img {
   max-width: 100%;
