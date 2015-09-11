@@ -473,6 +473,14 @@ body {
     body .md-trigger em {
       border-bottom: 1px solid #ffffff;
       font-style: normal; }
+  body .md-modal {
+    max-width: none; }
+    body .md-modal .md-content {
+      height: 100%;
+      width: 100%; }
+  body .md-show ~ .md-overlay {
+    opacity: 0;
+    visibility: none; }
 
 .wrap-container {
   margin-right: auto;

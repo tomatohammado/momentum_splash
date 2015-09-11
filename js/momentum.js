@@ -4,6 +4,7 @@ var setHeight = function() {
 
   $(".page-wrapper").css("height", $(window).innerHeight());
   $(".md-modal").css("height", ($(window).innerHeight() - 80));
+  $(".md-modal").css("width", ($(window).innerWidth() - 80));
 }
 
 $(document).ready(function() {

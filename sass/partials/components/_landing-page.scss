@@ -46,6 +46,21 @@ body {
       font-style: normal;
     }
   }
+
+  .md-modal {
+    // height: 100%;
+    // width: 100%;
+    max-width: none;
+    .md-content {
+      height: 100%;
+      width: 100%;
+     }
+  }
+
+  .md-show ~ .md-overlay {
+    opacity: 0;
+    visibility: none;
+  }
 }
 
 
