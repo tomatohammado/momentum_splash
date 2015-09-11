@@ -1,0 +1,53 @@
+// .modal-trigger {
+.md-trigger {
+  background: $c-red;
+  padding: 1em 2em;
+  display: inline-block;
+  width: 25%;
+  font-weight: 600;
+  // text-decoration: underline;
+  em { //this is to get the underline for the text but not the period, I like overwritting the default emphasis over nesting two spans
+    border-bottom: 1px solid $c-white;
+    font-style: normal;
+  }
+}
+
+
+
+.md-modal {
+  // height: 100%;
+  // width: 100%;
+  max-width: none;
+  .md-content {
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+
+    .content-header {
+      @include clearfix;
+      padding: 0;
+
+      .logo {
+        float: left;
+        // margin-left: 0;
+      }
+      .md-close {
+        float: right;
+        @include fontsize(50);
+        color: $c-black;
+        text-shadow: none;
+        background: none;
+        padding: 0;
+        &:hover {
+          color: $c-white;
+        }
+      }
+    }
+
+   }
+}
+
+.md-show ~ .md-overlay {
+  opacity: 0;
+  visibility: none;
+}
