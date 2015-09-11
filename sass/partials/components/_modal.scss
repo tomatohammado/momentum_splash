@@ -23,6 +23,7 @@
     width: 100%;
     padding: 15px;
     border-radius: 0;
+    background: $c-red;
 
     .content-header {
       @include clearfix;
@@ -94,6 +95,10 @@ form {
 
   #email-1f81b7fb-d2ce-4530-a1b6-848bae1a2053 {
     width: 100%;
+    border: none;
+    background: $c-red;
+    border-bottom: 1px solid $c-white;
+    color: $c-white;
   }
 
   .hs_submit {
@@ -110,5 +115,21 @@ form {
       background: $c-white;
     }
   }
+
+  ::-webkit-input-placeholder {
+   color: $c-white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $c-white;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $c-white;
+}
+
+:-ms-input-placeholder {
+   color: $c-white;
+}
 
 }
