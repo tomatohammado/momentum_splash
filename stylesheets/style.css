@@ -446,10 +446,12 @@ body {
   font-family: 'Poppins', sans-serif; }
   body .page-wrapper {
     margin: 0;
-    padding: 15px;
+    padding: 30px;
     border: 40px solid #ffffff;
     background: url(../../images/background.jpg) no-repeat center center fixed;
     background-size: cover; }
+  body #logo {
+    width: 200px; }
   body #hero {
     color: #ffffff;
     text-align: center;
