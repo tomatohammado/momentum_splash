@@ -470,8 +470,9 @@ body {
     display: inline-block;
     width: 25%;
     font-weight: 600; }
-    body .modal-trigger .button {
-      border-bottom: 1px solid #ffffff; }
+    body .modal-trigger em {
+      border-bottom: 1px solid #ffffff;
+      font-style: normal; }
 
 .container {
   margin-right: auto;

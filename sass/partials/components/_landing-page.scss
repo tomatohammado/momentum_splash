@@ -4,6 +4,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+
   .page-wrapper {
     margin: 0;
     padding: 30px;
@@ -16,6 +17,7 @@ body {
     // width: 15%;
     width: 200px;
   }
+
   #hero {
     color: $c-white;
     text-align: center;
@@ -38,8 +40,9 @@ body {
     width: 25%;
     font-weight: 600;
     // text-decoration: underline;
-    .button {
+    em { //this is to get the underline for the text but not the period, I like overwritting the default emphasis over nesting two spans
       border-bottom: 1px solid $c-white;
+      font-style: normal;
     }
   }
 }
