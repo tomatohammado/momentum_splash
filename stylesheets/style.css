@@ -547,7 +547,8 @@ form {
   form div[data-reactid=".0.1:$0"] {
     display: inline-block; }
   form div[data-reactid=".0.1:$0"] {
-    width: 70%; }
+    width: 70%;
+    padding-right: 10px; }
   form div[data-reactid=".0.1:$0.$email.$email"] {
     width: 100%; }
   form ul {
@@ -558,7 +559,14 @@ form {
     display: inline-block;
     width: 30%; }
     form .hs_submit input[type="submit"] {
-      width: 100%; }
+      width: 100%;
+      border: none;
+      border-radius: 0;
+      height: 35px;
+      bottom: 11px;
+      position: relative;
+      color: #ff4738;
+      background: #ffffff; }
 
 img {
   max-width: 100%;

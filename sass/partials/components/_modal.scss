@@ -79,6 +79,7 @@ form {
 
   div[data-reactid=".0.1:$0"]{
     width: 70%;
+    padding-right: 10px;
 
   }
   div[data-reactid=".0.1:$0.$email.$email"] {
@@ -100,6 +101,13 @@ form {
     width: 30%;
     input[type="submit"] {
       width: 100%;
+      border: none;
+      border-radius: 0;
+      height: 35px;
+      bottom: 11px;
+      position: relative;
+      color: $c-red;
+      background: $c-white;
     }
   }
 
