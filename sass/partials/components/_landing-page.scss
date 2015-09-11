@@ -26,7 +26,17 @@ body {
     }
   }
 
-
+  .modal-trigger {
+    background: rgb(255,71,56);
+    padding: 1em 2em;
+    display: inline-block;
+    width: 25%;
+    font-weight: 600;
+    // text-decoration: underline;
+    .button {
+      border-bottom: 1px solid $c-white;
+    }
+  }
 }
 
 
