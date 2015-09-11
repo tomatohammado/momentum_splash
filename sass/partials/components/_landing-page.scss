@@ -14,6 +14,12 @@ body {
   #hero {
     color: $c-white;
     text-align: center;
+
+    // vertical centering in 3 lines (via) http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+    position: relative;
+    top: 50%;
+    transform: translateY(-70%);
+
     h1 {
       @include fontsize(100);
       font-weight: 700;

@@ -452,7 +452,12 @@ body {
     background-size: cover; }
   body #hero {
     color: #ffffff;
-    text-align: center; }
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-70%);
+        -ms-transform: translateY(-70%);
+            transform: translateY(-70%); }
     body #hero h1 {
       font-size: 100px;
       font-size: 6.25rem;
