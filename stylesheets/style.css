@@ -522,6 +522,8 @@ body {
         padding: 0; }
         .md-modal .md-content .content-header .md-close:hover {
           color: #ffffff; }
+    .md-modal .md-content .content-wrapper {
+      margin: 0 auto; }
 
 .md-show ~ .md-overlay {
   opacity: 0;
