@@ -502,7 +502,8 @@ body {
   .md-modal .md-content {
     height: 100%;
     width: 100%;
-    padding: 15px; }
+    padding: 15px;
+    border-radius: 0; }
     .md-modal .md-content .content-header {
       padding: 0; }
       .md-modal .md-content .content-header:before, .md-modal .md-content .content-header:after {
