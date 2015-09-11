@@ -47,6 +47,15 @@
 
     .content-wrapper {
       margin: 0 auto;
+      width: 50%;
+      color: $c-black;
+      h3 {
+        @include fontsize(40);
+        font-weight: 700;
+        color: $c-white;
+        background: none;
+
+      }
     }
 
    }
@@ -54,5 +63,11 @@
 
 .md-show ~ .md-overlay {
   opacity: 0;
-  visibility: none;
+  visibility: hidden;
+}
+
+form {
+  label {
+    // visibility: hidden;
+  }
 }
