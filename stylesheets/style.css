@@ -444,14 +444,15 @@ body {
 
 body {
   font-family: 'Poppins', sans-serif; }
+  body .logo {
+    width: 200px;
+    margin: 15px; }
   body .page-wrapper {
     margin: 0;
-    padding: 30px;
+    padding: 15px;
     border: 40px solid #ffffff;
     background: url(../../images/background.jpg) no-repeat center center fixed;
     background-size: cover; }
-  body .logo {
-    width: 200px; }
   body #hero {
     color: #ffffff;
     text-align: center;
@@ -477,7 +478,8 @@ body {
     max-width: none; }
     body .md-modal .md-content {
       height: 100%;
-      width: 100%; }
+      width: 100%;
+      padding: 15px; }
   body .md-show ~ .md-overlay {
     opacity: 0;
     visibility: none; }

@@ -5,16 +5,16 @@
 body {
   font-family: 'Poppins', sans-serif;
 
+  .logo {
+    width: 200px;
+    margin: 15px;
+  }
   .page-wrapper {
     margin: 0;
-    padding: 30px;
+    padding: 15px;
     border: 40px solid $c-white;
     background: url(../../images/background.jpg) no-repeat center center fixed;
     background-size: cover;
-  }
-
-  .logo {
-    width: 200px;
   }
 
   #hero {
@@ -53,6 +53,7 @@ body {
     .md-content {
       height: 100%;
       width: 100%;
+      padding: 15px;
      }
   }
 
