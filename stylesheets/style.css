@@ -492,7 +492,8 @@ body {
   padding: 1em 2em;
   display: inline-block;
   width: 25%;
-  font-weight: 600; }
+  font-weight: 600;
+  cursor: pointer; }
   .md-trigger em {
     border-bottom: 1px solid #ffffff;
     font-style: normal; }
@@ -537,6 +538,19 @@ body {
 .md-show ~ .md-overlay {
   opacity: 0;
   visibility: hidden; }
+
+form {
+  display: inline-block; }
+  form label[placeholder="Enter your Email"] {
+    display: none; }
+  form div[data-reactid=".0.1:$0"] {
+    display: inline-block; }
+  form div[data-reactid=".0.1:$0.$email.$email"] {
+    width: 100%; }
+  form ul {
+    float: left; }
+  form .hs_submit {
+    display: inline-block; }
 
 img {
   max-width: 100%;
