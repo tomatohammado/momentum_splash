@@ -10,7 +10,11 @@
   <link href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" type="text/css" href="stylesheets/formalize.css" />
-  <link rel="stylesheet" type="text/css"href="custombox.min.css">
+  <link rel="stylesheet" type="text/css"href="stylesheets/custombox.min.css">
+
+  <link rel="stylesheet" type="text/css" href="stylesheets/default.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/component.css" />
+
 
   <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
 
@@ -38,12 +42,48 @@
     </section>
   </div>
 
+  <div class="md-modal md-effect-1" id="modal-1">
+    <div class="md-content">
+      <h3>Modal Dialog</h3>
+      <div>
+        <p>This is a modal window. You can do the following things with it:</p>
+        <ul>
+          <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+          <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+          <li><strong>Close:</strong> click on the button below to close the modal.</li>
+        </ul>
+        <button class="md-close">Close me!</button>
+      </div>
+    </div>
+  </div>
+
+  <button class="md-trigger" data-modal="modal-1">Fade in &amp; Scale</button>
+
+  <div class="md-overlay"></div><!-- the overlay element -->
+
   <!--  JS  -->
+
+  <!-- classie.js by @desandro: https://github.com/desandro/classie -->
+  <script src="js/vendor/classie.js"></script>
+  <script src="js/vendor/modalEffects.js"></script>
+
+  <!-- for the blur effect -->
+  <!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+  <script>
+    // this is important for IEs
+    var polyfilter_scriptpath = "/js/vendor/css-filters-polyfill.js";
+  </script>
+  <script src="js/vendor/cssParser.js"></script>
+  <script src="js/vendor/css-filters-polyfill.js"></script>
+
+
+
+
   <script type="text/javascript" src="js/vendor/jquery-1.11.3.min.js"></script>
   <script type="text/javascript" src="js/vendor/modernizr.min.js"></script>
 
-  <script type="text/javascript" src="custombox.min.js"></script>
-  <script type="text/javascript" src="legacy.min.js"></script> <!-- custombox dependency -->
+  <script type="text/javascript" src="js/vendor/custombox.min.js"></script>
+  <script type="text/javascript" src="js/vendor/legacy.min.js"></script> <!-- custombox dependency -->
 
   <script type="text/javascript" src="js/momentum.js"></script>
 
