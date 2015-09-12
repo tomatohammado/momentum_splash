@@ -55,6 +55,7 @@
         font-weight: 700;
         color: $c-white;
         background: none;
+        opacity: 1;
 
       }
     }
@@ -117,19 +118,23 @@ form {
   }
 
   ::-webkit-input-placeholder {
-   color: $c-white;
+     color: $c-white;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+     color: $c-white;
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+     color: $c-white;
+  }
+
+  :-ms-input-placeholder {
+     color: $c-white;
+  }
+
 }
 
-:-moz-placeholder { /* Firefox 18- */
-   color: $c-white;
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-   color: $c-white;
-}
-
-:-ms-input-placeholder {
-   color: $c-white;
-}
-
-}
+.submitted-message {
+    color: $c-white;
+  }
