@@ -12,6 +12,13 @@ var resizer = function() {
 $(document).ready(function() {
   console.log('jQuery ' + $().jquery + ' is firing.');
   resizer();
+  // $('body').flowtype({
+     // minimum   : 500,
+     // maximum   : 1200,
+     // minFont   : 12,
+     // maxFont   : 40,
+     // fontRatio : 30
+  // });
 });
 
 $(window).resize(function() {
