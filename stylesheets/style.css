@@ -464,7 +464,9 @@ body {
     body #hero h1 {
       font-size: 100px;
       font-size: 6.25rem;
-      font-weight: 700; }
+      font-weight: 700;
+      text-shadow: 1px 1px #ff4738, 2px 3px #ff4738, 3px 3px #ff4738, 4px 4px #ff4738, 5px 5px #ff4738;
+      line-height: 1; }
 
 .wrap-container {
   margin-right: auto;
@@ -493,9 +495,9 @@ body {
   width: 25%;
   font-weight: 600;
   cursor: pointer; }
-  .md-trigger em {
+  .md-trigger u {
     border-bottom: 1px solid #ffffff;
-    font-style: normal; }
+    text-decoration: none; }
 
 .md-modal {
   max-width: none; }

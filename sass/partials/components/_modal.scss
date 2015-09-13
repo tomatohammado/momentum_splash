@@ -6,10 +6,11 @@
   width: 25%;
   font-weight: 600;
   cursor: pointer;
-  em { //this is to get the underline for the text but not the period, I like overwritting the default emphasis over nesting two spans
+  u {
     border-bottom: 1px solid $c-white;
-    font-style: normal;
+    text-decoration: none;
   }
+
 }
 
 
