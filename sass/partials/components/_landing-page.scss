@@ -30,7 +30,15 @@ body {
     h1 {
       @include fontsize(100);
       font-weight: 700;
-      text-shadow: 1px 1px $c-red, 2px 3px $c-red, 3px 3px $c-red, 4px 4px $c-red, 5px 5px $c-red;
+      text-shadow: 1px 1px $c-red,
+                   1.5px 1.5px $c-red,
+                   2px 2px $c-red,
+                   2.5px 2.5px $c-red,
+                   3px 3px $c-red,
+                   3.5px 3.5px $c-red,
+                   4px 4px $c-red;
+                   // 4.5px 4.5px $c-red,
+                   // 5px 5px $c-red;
       line-height: 1;
     }
   }

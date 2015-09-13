@@ -1,7 +1,7 @@
 // .modal-trigger {
 .md-trigger {
   background: $c-red;
-  padding: 1em 2em;
+  padding: 1em 2%;
   display: inline-block;
   width: 25%;
   font-weight: 600;
@@ -101,6 +101,8 @@ form {
     background: $c-red;
     border-bottom: 1px solid $c-white;
     color: $c-white;
+    font: inherit;
+    font-size: 1rem;
   }
 
   .hs_submit {
@@ -110,11 +112,12 @@ form {
       width: 100%;
       border: none;
       border-radius: 0;
-      height: 35px;
-      bottom: 11px;
+      height: 40px;
+      bottom: 10px;
       position: relative;
       color: $c-red;
       background: $c-white;
+      font: inherit;
     }
   }
 

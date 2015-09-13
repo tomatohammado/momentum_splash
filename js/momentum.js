@@ -19,6 +19,13 @@ $(document).ready(function() {
      // maxFont   : 40,
      // fontRatio : 30
   // });
+
+  $('body').flowtype({
+     minimum   : 500,
+     maximum   : 1200,
+     fontRatio : 60
+  });
+
 });
 
 $(window).resize(function() {

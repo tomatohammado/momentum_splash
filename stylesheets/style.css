@@ -465,7 +465,7 @@ body {
       font-size: 100px;
       font-size: 6.25rem;
       font-weight: 700;
-      text-shadow: 1px 1px #ff4738, 2px 3px #ff4738, 3px 3px #ff4738, 4px 4px #ff4738, 5px 5px #ff4738;
+      text-shadow: 1px 1px #ff4738, 1.5px 1.5px #ff4738, 2px 2px #ff4738, 2.5px 2.5px #ff4738, 3px 3px #ff4738, 3.5px 3.5px #ff4738, 4px 4px #ff4738;
       line-height: 1; }
 
 .wrap-container {
@@ -490,7 +490,7 @@ body {
 
 .md-trigger {
   background: #ff4738;
-  padding: 1em 2em;
+  padding: 1em 2%;
   display: inline-block;
   width: 25%;
   font-weight: 600;
@@ -561,7 +561,9 @@ form {
     border: none;
     background: #ff4738;
     border-bottom: 1px solid #ffffff;
-    color: #ffffff; }
+    color: #ffffff;
+    font: inherit;
+    font-size: 1rem; }
   form .hs_submit {
     display: inline-block;
     width: 30%; }
@@ -569,11 +571,12 @@ form {
       width: 100%;
       border: none;
       border-radius: 0;
-      height: 35px;
-      bottom: 11px;
+      height: 40px;
+      bottom: 10px;
       position: relative;
       color: #ff4738;
-      background: #ffffff; }
+      background: #ffffff;
+      font: inherit; }
   form ::-webkit-input-placeholder {
     color: #ffffff; }
   form :-moz-placeholder {
