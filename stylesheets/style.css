@@ -462,11 +462,12 @@ body {
         -ms-transform: translateY(-70%);
             transform: translateY(-70%); }
     body #hero h1 {
-      font-size: 100px;
-      font-size: 6.25rem;
+      font-size: 65px;
+      font-size: 4.0625rem;
       font-weight: 700;
-      text-shadow: 1px 1px #ff4738, 1.5px 1.5px #ff4738, 2px 2px #ff4738, 2.5px 2.5px #ff4738, 3px 3px #ff4738, 3.5px 3.5px #ff4738, 4px 4px #ff4738;
-      line-height: 1; }
+      text-shadow: 1px 1px #ff4738, 1.5px 1.5px #ff4738, 2px 2px #ff4738, 2.5px 2.5px #ff4738, 3px 3px #ff4738, 3.5px 3.5px #ff4738, 4px 4px #ff4738; }
+    body #hero.wrap-container {
+      width: 80%; }
 
 .wrap-container {
   margin-right: auto;
@@ -492,7 +493,7 @@ body {
   background: #ff4738;
   padding: 1em 2%;
   display: inline-block;
-  width: 25%;
+  width: 31.25%;
   font-weight: 600;
   cursor: pointer; }
   .md-trigger u {
@@ -531,8 +532,8 @@ body {
       width: 50%;
       color: #000000; }
       .md-modal .md-content .content-wrapper h3 {
-        font-size: 40px;
-        font-size: 2.5rem;
+        font-size: 34px;
+        font-size: 2.125rem;
         font-weight: 700;
         color: #ffffff;
         background: none;

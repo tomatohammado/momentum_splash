@@ -28,7 +28,11 @@ body {
     transform: translateY(-70%);
 
     h1 {
-      @include fontsize(100);
+      // @include fontsize(100);
+      // line-height: 1;
+
+      @include fontsize(65);
+      // @include fontsize(80);
       font-weight: 700;
       text-shadow: 1px 1px $c-red,
                    1.5px 1.5px $c-red,
@@ -39,7 +43,12 @@ body {
                    4px 4px $c-red;
                    // 4.5px 4.5px $c-red,
                    // 5px 5px $c-red;
-      line-height: 1;
+
+      // line-height: 1;
+    }
+
+    &.wrap-container {
+      width: 80%;
     }
   }
 

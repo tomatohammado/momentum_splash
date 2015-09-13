@@ -20,7 +20,8 @@ $(document).ready(function() {
      // fontRatio : 30
   // });
 
-  $('body').flowtype({
+  // $('body').flowtype({
+  $('html').flowtype({
      minimum   : 500,
      maximum   : 1200,
      fontRatio : 60

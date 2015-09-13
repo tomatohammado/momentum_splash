@@ -3,7 +3,8 @@
   background: $c-red;
   padding: 1em 2%;
   display: inline-block;
-  width: 25%;
+  // width: 25%;
+  width: 31.25%;
   font-weight: 600;
   cursor: pointer;
   u {
@@ -52,7 +53,7 @@
       width: 50%;
       color: $c-black;
       h3 {
-        @include fontsize(40);
+        @include fontsize(34);
         font-weight: 700;
         color: $c-white;
         background: none;
