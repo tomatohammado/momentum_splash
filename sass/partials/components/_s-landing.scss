@@ -1,3 +1,5 @@
+/* new component naming convention!! how the s-prefix means section */
+
 * {
   box-sizing: border-box;
 }
@@ -14,7 +16,7 @@ body {
     margin: 15px;
   }
 
-  .page-wrapper {
+  section.landing {
     margin: 0;
     padding: 15px;
     border: 40px solid $c-white;
@@ -27,17 +29,8 @@ body {
     color: $c-white;
     text-align: center;
 
-    // vertical centering in 3 lines (via) http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
-    // position: relative;
-    // top: 50%;
-    // transform: translateY(-70%);
-
     h1 {
-      // @include fontsize(100);
-      // line-height: 1;
-
       @include fontsize(65);
-      // @include fontsize(80);
       font-weight: 700;
       text-shadow: 1px 1px $c-red,
                    1.5px 1.5px $c-red,
@@ -46,10 +39,6 @@ body {
                    3px 3px $c-red,
                    3.5px 3.5px $c-red,
                    4px 4px $c-red;
-                   // 4.5px 4.5px $c-red,
-                   // 5px 5px $c-red;
-
-      // line-height: 1;
     }
 
     &.wrap-container {

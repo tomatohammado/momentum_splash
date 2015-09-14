@@ -383,10 +383,10 @@ th {
  * pass true as the second argument.
  *
  */
-.tabs:before, .clear-row:before, body .page-wrapper:before, .clearfix:before, .tabs:after, .clear-row:after, body .page-wrapper:after, .clearfix:after {
+.tabs:before, .clear-row:before, body section.landing:before, .clearfix:before, .tabs:after, .clear-row:after, body section.landing:after, .clearfix:after {
   content: "";
   display: table; }
-.tabs:after, .clear-row:after, body .page-wrapper:after, .clearfix:after {
+.tabs:after, .clear-row:after, body section.landing:after, .clearfix:after {
   clear: both; }
 
 .skip-link, .visuallyhidden {
@@ -442,6 +442,7 @@ body {
   text-transform: uppercase;
   color: white; }
 
+/* new component naming convention!! how the s-prefix means section */
 * {
   box-sizing: border-box; }
 
@@ -450,7 +451,7 @@ body {
   body .logo {
     width: 200px;
     margin: 15px; }
-  body .page-wrapper {
+  body section.landing {
     margin: 0;
     padding: 15px;
     border: 40px solid #ffffff;
