@@ -50,8 +50,12 @@
 
     .content-wrapper {
       margin: 0 auto;
-      width: 50%;
+      width: 80%;
       color: $c-black;
+
+      @include breakpoint($bp-small) {
+        width: 50%;
+      }
       h3 {
         @include fontsize(34);
         font-weight: 700;
