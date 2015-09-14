@@ -631,7 +631,12 @@ a {
 .no-fouc {
   display: none; }
 
-.center-vert {
+@media (min-width: 31.25em) {
+  .center-vert {
+    position: relative;
+    top: 50%;
+    transform: translateY(-70%); } }
+.no-mediaqueries .center-vert {
   position: relative;
   top: 50%;
   transform: translateY(-70%); }
