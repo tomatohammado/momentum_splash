@@ -2,9 +2,23 @@
   box-sizing: border-box;
 }
 
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
 /*
  * Prevent Flash of Unstyled Content (via) http://johnpolacek.com/2012/10/03/help-prevent-fouc/
  */
 .no-fouc {
   display: none;
+}
+
+
+// vertical centering in 3 lines (via) http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+.center-vert {
+    position: relative;
+    top: 50%;
+    transform: translateY(-70%);
 }

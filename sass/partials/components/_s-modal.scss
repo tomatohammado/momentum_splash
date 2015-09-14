@@ -37,13 +37,8 @@
     border-radius: 0;
     background: $c-red;
 
-    .content-header {
-      @extend %clearfix;
-      padding: 0;
-
-      .logo {
+    .logo {
         float: left;
-        // margin-left: 0;
       }
       .md-close {
         float: right;
@@ -53,14 +48,13 @@
         background: none;
         padding: 0;
         border: none;
+        line-height: 1;
         &:hover {
           color: $c-white;
         }
       }
-    }
 
     .content-wrapper {
-      @extend %clearfix;
       margin: 0 auto;
       width: 80%;
       color: $c-black;

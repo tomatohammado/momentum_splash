@@ -1,29 +1,34 @@
 /* new component naming convention!! how the s-prefix means section */
 
 
+// .logo {
+//   width: 80px;
+//   margin: 0 auto;
 
-body {
-  // font-family: 'Poppins', sans-serif;
+//   @include breakpoint($bp-small) {
+//     width: 200px;
+//     margin: 15px;
+//   }
+// }
 
-  .logo {
+
+.logo {
     width: 200px;
-    margin: 15px;
-  }
-
-  section.landing {
-    margin: 0;
     padding: 15px;
-    border: 40px solid $c-white;
-    background: url(../../images/background.jpg) no-repeat center center fixed;
-    background-size: cover;
-    @extend %clearfix;
-  }
+}
+
+section.landing {
+  margin: 0;
+  padding: 15px;
+  border: 40px solid $c-white;
+  background: url(../../images/background.jpg) no-repeat center center fixed;
+  background-size: cover;
+  @extend %clearfix;
+
 
   .container {
     color: $c-white;
     text-align: center;
-    width: 80%;
-    margin: 0 auto;
 
     h2 {
       @include fontsize(65);
@@ -36,18 +41,13 @@ body {
                    3px 3px $c-red,
                    3.5px 3.5px $c-red,
                    4px 4px $c-red;
-
     }
   }
-
-
 }
 
 
 
-.center-vert {
-  // vertical centering in 3 lines (via) http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
-    position: relative;
-    top: 50%;
-    transform: translateY(-70%);
-}
+
+
+
+
