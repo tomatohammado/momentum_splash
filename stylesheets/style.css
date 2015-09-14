@@ -503,7 +503,9 @@ section.landing {
       background: none;
       padding: 0;
       border: none;
-      line-height: 1; }
+      line-height: 1;
+      padding-top: 5px;
+      padding-right: 5px; }
       .md-modal .md-content .md-close:hover {
         color: #ffffff; }
     .md-modal .md-content .content-wrapper {
