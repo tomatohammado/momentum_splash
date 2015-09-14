@@ -23,7 +23,8 @@ html {
 }
 
 body {
-  @extend %sans-serif;
+  // @extend %sans-serif;
+  @extend %poppins;
 }
 
 *:focus {

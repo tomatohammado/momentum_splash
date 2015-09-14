@@ -383,10 +383,10 @@ th {
  * pass true as the second argument.
  *
  */
-.tabs:before, .row:before, .clear-row:before, body section.landing:before, .clearfix:before, .tabs:after, .row:after, .clear-row:after, body section.landing:after, .clearfix:after {
+.tabs:before, body section.landing:before, .md-modal .md-content .content-header:before, .md-modal .md-content .content-wrapper:before, .clearfix:before, .tabs:after, body section.landing:after, .md-modal .md-content .content-header:after, .md-modal .md-content .content-wrapper:after, .clearfix:after {
   content: "";
   display: table; }
-.tabs:after, .row:after, .clear-row:after, body section.landing:after, .clearfix:after {
+.tabs:after, body section.landing:after, .md-modal .md-content .content-header:after, .md-modal .md-content .content-wrapper:after, .clearfix:after {
   clear: both; }
 
 .skip-link, .visuallyhidden {
@@ -400,7 +400,7 @@ th {
   width: 1px; }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased; }
 
@@ -443,50 +443,26 @@ body {
   color: white; }
 
 /* new component naming convention!! how the s-prefix means section */
-* {
-  box-sizing: border-box; }
-
-body {
-  font-family: 'Poppins', sans-serif; }
-  body .logo {
-    width: 200px;
-    margin: 15px; }
-  body section.landing {
-    margin: 0;
-    padding: 15px;
-    border: 40px solid #ffffff;
-    background: url(../../images/background.jpg) no-repeat center center fixed;
-    background-size: cover; }
-  body #hero {
-    color: #ffffff;
-    text-align: center; }
-    body #hero h1 {
-      font-size: 65px;
-      font-size: 4.0625rem;
-      font-weight: 700;
-      text-shadow: 1px 1px #ff4738, 1.5px 1.5px #ff4738, 2px 2px #ff4738, 2.5px 2.5px #ff4738, 3px 3px #ff4738, 3.5px 3.5px #ff4738, 4px 4px #ff4738; }
-    body #hero.wrap-container {
-      width: 80%; }
-
-.wrap-container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px; }
-  .wrap-container:before, .wrap-container:after {
-    content: " ";
-    display: table; }
-  .wrap-container:after {
-    clear: both; }
-  @media (min-width: 768px) {
-    .wrap-container {
-      width: 750px; } }
-  @media (min-width: 992px) {
-    .wrap-container {
-      width: 970px; } }
-  @media (min-width: 1200px) {
-    .wrap-container {
-      width: 1170px; } }
+body .logo {
+  width: 200px;
+  margin: 15px; }
+body section.landing {
+  margin: 0;
+  padding: 15px;
+  border: 40px solid #ffffff;
+  background: url(../../images/background.jpg) no-repeat center center fixed;
+  background-size: cover; }
+body .container {
+  color: #ffffff;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto; }
+  body .container h2 {
+    font-size: 65px;
+    font-size: 4.0625rem;
+    font-weight: 700;
+    margin-top: 0;
+    text-shadow: 1px 1px #ff4738, 1.5px 1.5px #ff4738, 2px 2px #ff4738, 2.5px 2.5px #ff4738, 3px 3px #ff4738, 3.5px 3.5px #ff4738, 4px 4px #ff4738; }
 
 .center-vert {
   position: relative;
@@ -494,12 +470,22 @@ body {
   transform: translateY(-70%); }
 
 .md-trigger {
+  width: 80%;
+  font-size: 2rem;
   background: #ff4738;
-  padding: 1em 2%;
+  padding: 2rem .5rem;
   display: inline-block;
-  width: 31.25%;
   font-weight: 600;
   cursor: pointer; }
+  @media (min-width: 48em) {
+    .md-trigger {
+      width: 31.25%;
+      font-size: 1rem;
+      padding: 1rem .5rem; } }
+  .no-mediaqueries .md-trigger {
+    width: 31.25%;
+    font-size: 1rem;
+    padding: 1rem .5rem; }
   .md-trigger u {
     border-bottom: 2px solid #ffffff;
     text-decoration: none; }
@@ -514,11 +500,6 @@ body {
     background: #ff4738; }
     .md-modal .md-content .content-header {
       padding: 0; }
-      .md-modal .md-content .content-header:before, .md-modal .md-content .content-header:after {
-        content: " ";
-        display: table; }
-      .md-modal .md-content .content-header:after {
-        clear: both; }
       .md-modal .md-content .content-header .logo {
         float: left; }
       .md-modal .md-content .content-header .md-close {
@@ -536,11 +517,6 @@ body {
       margin: 0 auto;
       width: 80%;
       color: #000000; }
-      .md-modal .md-content .content-wrapper:before, .md-modal .md-content .content-wrapper:after {
-        content: " ";
-        display: table; }
-      .md-modal .md-content .content-wrapper:after {
-        clear: both; }
       @media (min-width: 48em) {
         .md-modal .md-content .content-wrapper {
           width: 50%; } }
@@ -649,6 +625,12 @@ a {
     height: 100%;
     width: 100%; }
 
+* {
+  box-sizing: border-box; }
+
+/*
+ * Prevent Flash of Unstyled Content (via) http://johnpolacek.com/2012/10/03/help-prevent-fouc/
+ */
 .no-fouc {
   display: none; }
 

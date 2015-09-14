@@ -1,3 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+/*
+ * Prevent Flash of Unstyled Content (via) http://johnpolacek.com/2012/10/03/help-prevent-fouc/
+ */
 .no-fouc {
   display: none;
 }

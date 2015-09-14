@@ -1,15 +1,9 @@
 /* new component naming convention!! how the s-prefix means section */
 
-* {
-  box-sizing: border-box;
-}
 
-.row, .clear-row {
-  @extend %clearfix;
-}
 
 body {
-  font-family: 'Poppins', sans-serif;
+  // font-family: 'Poppins', sans-serif;
 
   .logo {
     width: 200px;
@@ -25,13 +19,16 @@ body {
     @extend %clearfix;
   }
 
-  #hero {
+  .container {
     color: $c-white;
     text-align: center;
+    width: 80%;
+    margin: 0 auto;
 
-    h1 {
+    h2 {
       @include fontsize(65);
       font-weight: 700;
+      margin-top: 0;
       text-shadow: 1px 1px $c-red,
                    1.5px 1.5px $c-red,
                    2px 2px $c-red,
@@ -39,33 +36,13 @@ body {
                    3px 3px $c-red,
                    3.5px 3.5px $c-red,
                    4px 4px $c-red;
-    }
 
-    &.wrap-container {
-      width: 80%;
     }
   }
 
 
 }
 
-
-
-
-
-.wrap-container {
-  @include container-fixed;
-
-  @media (min-width: $screen-sm-min) {
-    width: $container-sm;
-  }
-  @media (min-width: $screen-md-min) {
-    width: $container-md;
-  }
-  @media (min-width: $screen-lg-min) {
-    width: $container-lg;
-  }
-}
 
 
 .center-vert {
