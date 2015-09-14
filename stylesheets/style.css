@@ -383,10 +383,10 @@ th {
  * pass true as the second argument.
  *
  */
-.tabs:before, .clear-row:before, body section.landing:before, .clearfix:before, .tabs:after, .clear-row:after, body section.landing:after, .clearfix:after {
+.tabs:before, .row:before, .clear-row:before, body section.landing:before, .clearfix:before, .tabs:after, .row:after, .clear-row:after, body section.landing:after, .clearfix:after {
   content: "";
   display: table; }
-.tabs:after, .clear-row:after, body section.landing:after, .clearfix:after {
+.tabs:after, .row:after, .clear-row:after, body section.landing:after, .clearfix:after {
   clear: both; }
 
 .skip-link, .visuallyhidden {
@@ -528,7 +528,8 @@ body {
         color: #000000;
         text-shadow: none;
         background: none;
-        padding: 0; }
+        padding: 0;
+        border: none; }
         .md-modal .md-content .content-header .md-close:hover {
           color: #ffffff; }
     .md-modal .md-content .content-wrapper {
