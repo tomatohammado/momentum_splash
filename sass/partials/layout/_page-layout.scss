@@ -17,7 +17,7 @@
 // vertical centering in 3 lines (via) http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
 .center-vert {
 
-    @include breakpoint($bp-tiny) {
+    @include breakpoint($bp-small) {
       position: relative;
       top: 50%;
       transform: translateY(-70%);

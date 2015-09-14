@@ -631,7 +631,7 @@ a {
 .no-fouc {
   display: none; }
 
-@media (min-width: 31.25em) {
+@media (min-width: 48em) {
   .center-vert {
     position: relative;
     top: 50%;
