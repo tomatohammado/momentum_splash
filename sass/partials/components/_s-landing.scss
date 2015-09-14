@@ -1,17 +1,5 @@
 /* new component naming convention!! how the s-prefix means section */
 
-
-// .logo {
-//   width: 80px;
-//   margin: 0 auto;
-
-//   @include breakpoint($bp-small) {
-//     width: 200px;
-//     margin: 15px;
-//   }
-// }
-
-
 .logo {
     width: 200px;
     padding: 15px;
@@ -33,7 +21,7 @@ section.landing {
     h2 {
       @include fontsize(65);
       font-weight: 700;
-      margin-top: 0;
+      margin: 0 0 1rem 0;
       text-shadow: 1px 1px $c-red,
                    1.5px 1.5px $c-red,
                    2px 2px $c-red,

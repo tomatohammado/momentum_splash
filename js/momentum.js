@@ -17,7 +17,7 @@ $(document).ready(function() {
 
   resizer();
 
-  $('html').flowtype({ // not 'body' so rem font sizes carry through
+  $('html').flowtype({
      minimum   : 500,
      maximum   : 1200,
      fontRatio : 60

@@ -460,7 +460,7 @@ section.landing {
       font-size: 65px;
       font-size: 4.0625rem;
       font-weight: 700;
-      margin-top: 0;
+      margin: 0 0 1rem 0;
       text-shadow: 1px 1px #ff4738, 1.5px 1.5px #ff4738, 2px 2px #ff4738, 2.5px 2.5px #ff4738, 3px 3px #ff4738, 3.5px 3.5px #ff4738, 4px 4px #ff4738; }
 
 .md-trigger {
@@ -505,7 +505,8 @@ section.landing {
       border: none;
       line-height: 1;
       padding-top: 5px;
-      padding-right: 5px; }
+      padding-right: 5px;
+      cursor: pointer; }
       .md-modal .md-content .md-close:hover {
         color: #ffffff; }
     .md-modal .md-content .content-wrapper {
@@ -627,9 +628,6 @@ a {
   width: 80%;
   margin: 0 auto; }
 
-/*
- * Prevent Flash of Unstyled Content (via) http://johnpolacek.com/2012/10/03/help-prevent-fouc/
- */
 .no-fouc {
   display: none; }
 
@@ -637,5 +635,13 @@ a {
   position: relative;
   top: 50%;
   transform: translateY(-70%); }
+
+.r-wbr {
+  display: inline; }
+  @media (min-width: 48em) {
+    .r-wbr {
+      display: block; } }
+  .no-mediaqueries .r-wbr {
+    display: block; }
 
 /*# sourceMappingURL=style.css.map */
