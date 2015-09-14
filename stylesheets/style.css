@@ -383,10 +383,10 @@ th {
  * pass true as the second argument.
  *
  */
-.tabs:before, .clearfix:before, .tabs:after, .clearfix:after {
+.tabs:before, .clear-row:before, body .page-wrapper:before, .clearfix:before, .tabs:after, .clear-row:after, body .page-wrapper:after, .clearfix:after {
   content: "";
   display: table; }
-.tabs:after, .clearfix:after {
+.tabs:after, .clear-row:after, body .page-wrapper:after, .clearfix:after {
   clear: both; }
 
 .skip-link, .visuallyhidden {
@@ -458,10 +458,7 @@ body {
     background-size: cover; }
   body #hero {
     color: #ffffff;
-    text-align: center;
-    position: relative;
-    top: 50%;
-    transform: translateY(-70%); }
+    text-align: center; }
     body #hero h1 {
       font-size: 65px;
       font-size: 4.0625rem;
@@ -489,6 +486,11 @@ body {
   @media (min-width: 1200px) {
     .wrap-container {
       width: 1170px; } }
+
+.center-vert {
+  position: relative;
+  top: 50%;
+  transform: translateY(-70%); }
 
 .md-trigger {
   background: #ff4738;
@@ -532,6 +534,11 @@ body {
       margin: 0 auto;
       width: 80%;
       color: #000000; }
+      .md-modal .md-content .content-wrapper:before, .md-modal .md-content .content-wrapper:after {
+        content: " ";
+        display: table; }
+      .md-modal .md-content .content-wrapper:after {
+        clear: both; }
       @media (min-width: 48em) {
         .md-modal .md-content .content-wrapper {
           width: 50%; } }

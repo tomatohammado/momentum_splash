@@ -2,11 +2,15 @@
   box-sizing: border-box;
 }
 
+.clear-row {
+  @extend %clearfix;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
 
   .logo {
-    width: 200px;
+    width: 200px; //
     margin: 15px;
   }
 
@@ -16,6 +20,7 @@ body {
     border: 40px solid $c-white;
     background: url(../../images/background.jpg) no-repeat center center fixed;
     background-size: cover;
+    @extend %clearfix;
   }
 
   #hero {
@@ -23,9 +28,9 @@ body {
     text-align: center;
 
     // vertical centering in 3 lines (via) http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
-    position: relative;
-    top: 50%;
-    transform: translateY(-70%);
+    // position: relative;
+    // top: 50%;
+    // transform: translateY(-70%);
 
     h1 {
       // @include fontsize(100);
@@ -71,4 +76,12 @@ body {
   @media (min-width: $screen-lg-min) {
     width: $container-lg;
   }
+}
+
+
+.center-vert {
+  // vertical centering in 3 lines (via) http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+    position: relative;
+    top: 50%;
+    transform: translateY(-70%);
 }

@@ -49,6 +49,7 @@
     }
 
     .content-wrapper {
+      @include clearfix;
       margin: 0 auto;
       width: 80%;
       color: $c-black;
@@ -66,7 +67,13 @@
       }
     }
 
-   }
+    .center-vert {
+      // top: 0;
+      // transform: none;
+    }
+
+
+  } //.md-content asdfa
 }
 
 .md-show ~ .md-overlay {
