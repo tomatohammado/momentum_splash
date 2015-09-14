@@ -457,15 +457,16 @@ section.landing {
     color: #ffffff;
     text-align: center; }
     section.landing .container h2 {
-      font-size: 65px;
-      font-size: 4.0625rem;
+      font-size: 60px;
+      font-size: 3.75rem;
       font-weight: 700;
       margin: 0 0 1rem 0;
       text-shadow: 1px 1px #ff4738, 1.5px 1.5px #ff4738, 2px 2px #ff4738, 2.5px 2.5px #ff4738, 3px 3px #ff4738, 3.5px 3.5px #ff4738, 4px 4px #ff4738; }
 
 .md-trigger {
   width: 80%;
-  font-size: 2rem;
+  font-size: 30px;
+  font-size: 1.875rem;
   background: #ff4738;
   padding: 2rem .5rem;
   display: inline-block;
@@ -489,7 +490,7 @@ section.landing {
   .md-modal .md-content {
     height: 100%;
     width: 100%;
-    padding: 15px;
+    padding-bottom: 15px;
     border-radius: 0;
     background: #ff4738; }
     .md-modal .md-content .logo {

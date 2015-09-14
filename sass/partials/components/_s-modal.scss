@@ -2,7 +2,7 @@
 .md-trigger {
 
   width: 80%;
-  font-size: 2rem;
+  @include fontsize(30);
 
   background: $c-red;
   padding: 2rem .5rem;
@@ -33,7 +33,7 @@
   .md-content {
     height: 100%;
     width: 100%;
-    padding: 15px;
+    padding-bottom: 15px;
     border-radius: 0;
     background: $c-red;
 

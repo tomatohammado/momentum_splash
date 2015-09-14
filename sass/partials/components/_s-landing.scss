@@ -19,7 +19,7 @@ section.landing {
     text-align: center;
 
     h2 {
-      @include fontsize(65);
+      @include fontsize(60); //
       font-weight: 700;
       margin: 0 0 1rem 0;
       text-shadow: 1px 1px $c-red,
