@@ -11,17 +11,13 @@ var resizer = function() {
 
 $(document).ready(function() {
   console.log('jQuery ' + $().jquery + ' is firing.');
-  resizer();
-  // $('body').flowtype({
-     // minimum   : 500,
-     // maximum   : 1200,
-     // minFont   : 12,
-     // maxFont   : 40,
-     // fontRatio : 30
-  // });
 
-  // $('body').flowtype({
-  $('html').flowtype({
+  // http://johnpolacek.com/2012/10/03/help-prevent-fouc/
+  $('.no-fouc').removeClass('no-fouc');
+
+  resizer();
+
+  $('html').flowtype({ // not 'body' so rem font sizes carry through
      minimum   : 500,
      maximum   : 1200,
      fontRatio : 60
