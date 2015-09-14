@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.clear-row {
+.row, .clear-row {
   @extend %clearfix;
 }
 
@@ -12,7 +12,7 @@ body {
   font-family: 'Poppins', sans-serif;
 
   .logo {
-    width: 200px; //
+    width: 200px;
     margin: 15px;
   }
 
