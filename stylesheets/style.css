@@ -530,17 +530,27 @@ section.modal .md-content {
     float: left; }
   section.modal .md-content .md-close {
     float: right;
-    font-size: 50px;
-    font-size: 3.125rem;
     color: #000000;
+    border: none;
     text-shadow: none;
     background: none;
-    padding: 0;
-    border: none;
     line-height: 1;
-    padding-top: 5px;
-    padding-right: 5px;
-    cursor: pointer; }
+    padding: 15px 5px 0 0;
+    position: relative;
+    right: 7px;
+    bottom: 5px;
+    font-size: 30px; }
+    @media (min-width: 48em) {
+      section.modal .md-content .md-close {
+        font-size: 50px;
+        padding-top: 5px;
+        right: 4px;
+        bottom: 0; } }
+    .no-mediaqueries section.modal .md-content .md-close {
+      font-size: 50px;
+      padding-top: 5px;
+      right: 4px;
+      bottom: 0; }
   section.modal .md-content .container {
     color: #000000; }
     @media (min-width: 64em) {

@@ -1,9 +1,6 @@
 var frameWidth = 40;
 
 var resizer = function() {
-  //window, viewport, what's the right _name_ for it? also (research) http://www.matanich.com/2013/01/07/viewport-size/
-  // var viewHeight = $(window).innerHeight();
-
   $(".landing").css("height", $(window).innerHeight());
   $(".md-modal").css("height", ($(window).innerHeight() - frameWidth*2));
   $(".md-modal").css("width", ($(window).innerWidth() - frameWidth*2));
@@ -18,7 +15,6 @@ $(document).ready(function() {
   resizer();
 
   $('html').flowtype({
-     // minimum   : 500,
      minimum   : 768,
      maximum   : 1200,
      fontRatio : 60

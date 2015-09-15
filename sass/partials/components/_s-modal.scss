@@ -17,18 +17,25 @@
 
     .md-close {
       float: right;
-      @include fontsize(50);
       color: $c-black;
+      border: none;
       text-shadow: none;
       background: none;
-      padding: 0;
-      border: none;
       line-height: 1;
+      padding: 15px 5px 0 0;
+      position: relative;
+      right: 7px;
+      bottom: 5px;
+      font-size: 30px;
 
-      padding-top: 5px;
-      padding-right: 5px;
+      @include breakpoint($bp-small) {
+        font-size: 50px;
+        padding-top: 5px;
+        right: 4px;
+        bottom: 0;
 
-      cursor: pointer;
+      }
+
     }
 
 
