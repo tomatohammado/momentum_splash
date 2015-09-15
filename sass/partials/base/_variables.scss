@@ -13,6 +13,7 @@ $base-font-size: 16;
 }
 
 // Breakpoints
+$bp-petite: px-to-em(375);
 $bp-tiny: px-to-em(500);
 $bp-small: px-to-em(768);
 $bp-med: px-to-em(1024);

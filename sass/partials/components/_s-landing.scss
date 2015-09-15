@@ -1,10 +1,5 @@
 /* new component naming convention!! how the s-prefix means section */
 
-.logo {
-    width: 200px;
-    padding: 15px;
-}
-
 section.landing {
   border: 40px solid $c-white;
   margin: 0;
@@ -13,7 +8,7 @@ section.landing {
   text-align: center;
 
   h2 {
-    @include fontsize(50);
+    @include fontsize(32);
     font-weight: 700;
     margin: 0 0 1rem 0;
     text-shadow: 1px 1px $c-red,
@@ -23,6 +18,10 @@ section.landing {
                  3px 3px $c-red,
                  3.5px 3.5px $c-red,
                  4px 4px $c-red;
+
+    @include breakpoint($bp-petite) {
+      @include fontsize(50);
+    }
 
     @include breakpoint($bp-tiny) {
       @include fontsize(54);
@@ -35,16 +34,20 @@ section.landing {
 
   button.action {
     // @include fontsize(30);
-    @include fontsize(18);
+    @include fontsize(13);
     font-weight: 600;
     width: 60%;
     border: none;
     border-radius: 0;
     display: inline-block;
-    padding: 1.75rem .5rem;
+    padding: 1rem .5rem;
     background: $c-red;
     text-shadow: none;
-    // cursor: pointer;
+
+    @include breakpoint($bp-petite) {
+      @include fontsize(18);
+      padding: 1.75rem .5rem;
+    }
 
     @include breakpoint($bp-tiny) {
       @include fontsize(20); // 1.5rem

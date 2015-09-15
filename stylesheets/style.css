@@ -449,10 +449,6 @@ body {
   color: white; }
 
 /* new component naming convention!! how the s-prefix means section */
-.logo {
-  width: 200px;
-  padding: 15px; }
-
 section.landing {
   border: 40px solid #ffffff;
   margin: 0;
@@ -460,11 +456,18 @@ section.landing {
   background-size: cover;
   text-align: center; }
   section.landing h2 {
-    font-size: 50px;
-    font-size: 3.125rem;
+    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
     margin: 0 0 1rem 0;
     text-shadow: 1px 1px #ff4738, 1.5px 1.5px #ff4738, 2px 2px #ff4738, 2.5px 2.5px #ff4738, 3px 3px #ff4738, 3.5px 3.5px #ff4738, 4px 4px #ff4738; }
+    @media (min-width: 23.4375em) {
+      section.landing h2 {
+        font-size: 50px;
+        font-size: 3.125rem; } }
+    .no-mediaqueries section.landing h2 {
+      font-size: 50px;
+      font-size: 3.125rem; }
     @media (min-width: 31.25em) {
       section.landing h2 {
         font-size: 54px;
@@ -480,16 +483,25 @@ section.landing {
       font-size: 60px;
       font-size: 3.75rem; }
   section.landing button.action {
-    font-size: 18px;
-    font-size: 1.125rem;
+    font-size: 13px;
+    font-size: 0.8125rem;
     font-weight: 600;
     width: 60%;
     border: none;
     border-radius: 0;
     display: inline-block;
-    padding: 1.75rem .5rem;
+    padding: 1rem .5rem;
     background: #ff4738;
     text-shadow: none; }
+    @media (min-width: 23.4375em) {
+      section.landing button.action {
+        font-size: 18px;
+        font-size: 1.125rem;
+        padding: 1.75rem .5rem; } }
+    .no-mediaqueries section.landing button.action {
+      font-size: 18px;
+      font-size: 1.125rem;
+      padding: 1.75rem .5rem; }
     @media (min-width: 31.25em) {
       section.landing button.action {
         font-size: 20px;
@@ -528,7 +540,10 @@ section.modal .md-content {
   width: 100%;
   padding-bottom: 15px;
   background: #ff4738; }
-  section.modal .md-content .logo {
+  @media (min-width: 23.4375em) {
+    section.modal .md-content .logo {
+      float: left; } }
+  .no-mediaqueries section.modal .md-content .logo {
     float: left; }
   section.modal .md-content .md-close {
     float: right;
@@ -539,9 +554,14 @@ section.modal .md-content {
     line-height: 1;
     padding: 15px 5px 0 0;
     position: relative;
-    right: 7px;
-    bottom: 5px;
     font-size: 30px; }
+    @media (min-width: 23.4375em) {
+      section.modal .md-content .md-close {
+        right: 7px;
+        bottom: 5px; } }
+    .no-mediaqueries section.modal .md-content .md-close {
+      right: 7px;
+      bottom: 5px; }
     @media (min-width: 48em) {
       section.modal .md-content .md-close {
         font-size: 50px;
@@ -554,19 +574,46 @@ section.modal .md-content {
       right: 4px;
       bottom: 0; }
   section.modal .md-content .container {
-    color: #000000; }
+    color: #000000;
+    font-size: 12px;
+    font-size: 0.75rem; }
+    @media (min-width: 23.4375em) {
+      section.modal .md-content .container {
+        font-size: 16px;
+        font-size: 1rem; } }
+    .no-mediaqueries section.modal .md-content .container {
+      font-size: 16px;
+      font-size: 1rem; }
     @media (min-width: 48em) {
       section.modal .md-content .container {
-        width: 50%; } }
+        width: 50%;
+        font-size: 20px;
+        font-size: 1.25rem; } }
     .no-mediaqueries section.modal .md-content .container {
-      width: 50%; }
+      width: 50%;
+      font-size: 20px;
+      font-size: 1.25rem; }
     section.modal .md-content .container h3 {
-      font-size: 34px;
-      font-size: 2.125rem;
+      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: 700;
       color: #ffffff;
       background: none;
       opacity: 1; }
+      @media (min-width: 23.4375em) {
+        section.modal .md-content .container h3 {
+          font-size: 34px;
+          font-size: 2.125rem; } }
+      .no-mediaqueries section.modal .md-content .container h3 {
+        font-size: 34px;
+        font-size: 2.125rem; }
+      @media (min-width: 48em) {
+        section.modal .md-content .container h3 {
+          font-size: 48px;
+          font-size: 3rem; } }
+      .no-mediaqueries section.modal .md-content .container h3 {
+        font-size: 48px;
+        font-size: 3rem; }
 
 form {
   display: inline-block;
@@ -589,8 +636,8 @@ form {
     border-bottom: 2px solid #ffffff;
     color: #ffffff;
     font: inherit;
-    font-size: 1rem;
-    line-height: initial; }
+    line-height: initial;
+    padding: 5px 10px; }
   form .hs_submit {
     display: inline-block;
     width: 30%; }
@@ -667,6 +714,18 @@ a {
 header {
   padding: 15px;
   padding-bottom: 0; }
+
+.logo {
+  width: 150px;
+  padding: 15px;
+  margin: 0 auto; }
+  @media (min-width: 23.4375em) {
+    .logo {
+      width: 200px;
+      margin: 0; } }
+  .no-mediaqueries .logo {
+    width: 200px;
+    margin: 0; }
 
 .container {
   width: 80%;

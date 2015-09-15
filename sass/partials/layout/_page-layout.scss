@@ -14,6 +14,18 @@ header {
   padding-bottom: 0;
 }
 
+.logo {
+  width: 150px;
+  padding: 15px;
+  margin: 0 auto;
+
+  @include breakpoint($bp-petite) {
+    width: 200px;
+    margin: 0;
+  }
+
+}
+
 .container {
   width: 80%;
   margin: 0 auto;

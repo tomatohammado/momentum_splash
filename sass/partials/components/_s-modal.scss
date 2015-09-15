@@ -11,7 +11,9 @@
     background: $c-red;
 
     .logo {
-      float: left;
+      @include breakpoint($bp-petite) {
+        float: left;
+      }
     }
 
     .md-close {
@@ -23,9 +25,12 @@
       line-height: 1;
       padding: 15px 5px 0 0;
       position: relative;
-      right: 7px;
-      bottom: 5px;
       font-size: 30px;
+
+      @include breakpoint($bp-petite) {
+        right: 7px;
+        bottom: 5px;
+      }
 
       @include breakpoint($bp-small) {
         font-size: 50px;
@@ -40,20 +45,32 @@
 
     // .content-wrapper {
     .container {
-      // width: 80%;
-      // margin: 0 auto;
       color: $c-black;
+      @include fontsize(12);
+
+      @include breakpoint($bp-petite) {
+        @include fontsize(16);
+      }
 
       @include breakpoint($bp-small) {
         width: 50%;
+        @include fontsize(20);
       }
 
       h3 {
-        @include fontsize(34);
+        @include fontsize(24);
         font-weight: 700;
         color: $c-white;
         background: none;
         opacity: 1;
+
+        @include breakpoint($bp-petite) {
+          @include fontsize(34);
+        }
+
+        @include breakpoint($bp-small) {
+          @include fontsize(48);
+        }
       }
     }
   } //.md-content
