@@ -521,11 +521,8 @@ section.landing {
       border-bottom: 2px solid #ffffff; }
 
 /*
- * .md-trigger is in the Landing Section of the page, so I put the styles in the
- *  corresponding SCSS partial
+ * .md-trigger is in the Landing Section of the page
  */
-section.modal header {
-  padding-bottom: 0; }
 section.modal .md-content {
   height: 100%;
   width: 100%;
@@ -558,7 +555,7 @@ section.modal .md-content {
       bottom: 0; }
   section.modal .md-content .container {
     color: #000000; }
-    @media (min-width: 64em) {
+    @media (min-width: 48em) {
       section.modal .md-content .container {
         width: 50%; } }
     .no-mediaqueries section.modal .md-content .container {
@@ -668,7 +665,8 @@ a {
   box-sizing: border-box; }
 
 header {
-  padding: 15px; }
+  padding: 15px;
+  padding-bottom: 0; }
 
 .container {
   width: 80%;

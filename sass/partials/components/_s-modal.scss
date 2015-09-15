@@ -1,13 +1,8 @@
 /*
- * .md-trigger is in the Landing Section of the page, so I put the styles in the
- *  corresponding SCSS partial
+ * .md-trigger is in the Landing Section of the page
  */
 
  section.modal {
-
-  header {
-    padding-bottom: 0;
-  }
 
   .md-content {
     height: 100%;
@@ -49,7 +44,7 @@
       // margin: 0 auto;
       color: $c-black;
 
-      @include breakpoint($bp-med) {
+      @include breakpoint($bp-small) {
         width: 50%;
       }
 
