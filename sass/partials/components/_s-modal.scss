@@ -89,11 +89,10 @@ form {
     border: none;
     background: $c-red;
     border-bottom: 2px solid $c-white;
-    // color: $c-white;
+    color: $c-white;
     font: inherit;
     font-size: 1rem;
     line-height: initial;
-    // margin-top: 2px;
   }
 
   .hs_submit {
@@ -129,6 +128,7 @@ form {
   }
 
 
+      // now my question, why don't this work?!
   // input::-webkit-input-placeholder,
   // input:-moz-placeholder,
   // input::-moz-placeholder,
