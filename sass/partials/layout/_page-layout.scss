@@ -4,7 +4,8 @@
 
 section,
 header,
-.container {
+.container,
+.row {
   @extend %clearfix;
 }
 

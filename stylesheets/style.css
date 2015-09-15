@@ -382,14 +382,17 @@ th {
  */
 .tabs:before, .clearfix:before, section:before,
 header:before,
-.container:before, .tabs:after, .clearfix:after, section:after,
+.container:before,
+.row:before, .tabs:after, .clearfix:after, section:after,
 header:after,
-.container:after {
+.container:after,
+.row:after {
   content: "";
   display: table; }
 .tabs:after, .clearfix:after, section:after,
 header:after,
-.container:after {
+.container:after,
+.row:after {
   clear: both; }
 
 .skip-link, .visuallyhidden {
@@ -521,6 +524,8 @@ section.landing {
  * .md-trigger is in the Landing Section of the page, so I put the styles in the
  *  corresponding SCSS partial
  */
+section.modal header {
+  padding-bottom: 0; }
 section.modal .md-content {
   height: 100%;
   width: 100%;
