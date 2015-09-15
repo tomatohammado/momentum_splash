@@ -451,7 +451,6 @@ section.landing {
   background: url(../../images/background.jpg) no-repeat center center fixed;
   background-size: cover; }
   section.landing .container {
-    color: #ffffff;
     text-align: center; }
     section.landing .container h2 {
       font-size: 60px;
@@ -459,29 +458,31 @@ section.landing {
       font-weight: 700;
       margin: 0 0 1rem 0;
       text-shadow: 1px 1px #ff4738, 1.5px 1.5px #ff4738, 2px 2px #ff4738, 2.5px 2.5px #ff4738, 3px 3px #ff4738, 3.5px 3.5px #ff4738, 4px 4px #ff4738; }
-
-.md-trigger {
-  width: 80%;
-  font-size: 30px;
-  font-size: 1.875rem;
-  background: #ff4738;
-  padding: 2rem .5rem;
-  display: inline-block;
-  font-weight: 600;
-  cursor: pointer; }
-  @media (min-width: 48em) {
-    .md-trigger {
+  section.landing .md-trigger {
+    font-size: 30px;
+    font-size: 1.875rem;
+    font-weight: 600;
+    width: 80%;
+    display: inline-block;
+    padding: 2rem .5rem;
+    background: #ff4738;
+    cursor: pointer; }
+    @media (min-width: 48em) {
+      section.landing .md-trigger {
+        width: 31.25%;
+        font-size: 1rem;
+        padding: 1rem .5rem; } }
+    .no-mediaqueries section.landing .md-trigger {
       width: 31.25%;
       font-size: 1rem;
-      padding: 1rem .5rem; } }
-  .no-mediaqueries .md-trigger {
-    width: 31.25%;
-    font-size: 1rem;
-    padding: 1rem .5rem; }
-  .md-trigger u {
-    border-bottom: 2px solid #ffffff;
-    text-decoration: none; }
+      padding: 1rem .5rem; }
+    section.landing .md-trigger .underline {
+      border-bottom: 2px solid #ffffff; }
 
+/*
+ * .md-trigger is in the Landing Section of the page, so I put the styles in the
+ *  corresponding SCSS partial
+ */
 .md-modal .md-content {
   height: 100%;
   width: 100%;
@@ -502,8 +503,6 @@ section.landing {
     padding-top: 5px;
     padding-right: 5px;
     cursor: pointer; }
-    .md-modal .md-content .md-close:hover {
-      color: #ffffff; }
   .md-modal .md-content .content-wrapper {
     margin: 0 auto;
     width: 80%;
@@ -544,11 +543,9 @@ form {
     border: none;
     background: #ff4738;
     border-bottom: 2px solid #ffffff;
-    color: #ffffff;
     font: inherit;
     font-size: 1rem;
-    line-height: initial;
-    margin-top: 2px; }
+    line-height: initial; }
   form .hs_submit {
     display: inline-block;
     width: 30%; }
@@ -593,6 +590,9 @@ img {
 html {
   font-size: 100%;
   line-height: 1.4; }
+
+body {
+  color: #ffffff; }
 
 *:focus {
   outline: dotted 2px #000000; }

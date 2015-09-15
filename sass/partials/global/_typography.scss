@@ -25,6 +25,7 @@ html {
 body {
   // @extend %sans-serif;
   @extend %poppins;
+  color: $c-white;
 }
 
 *:focus {

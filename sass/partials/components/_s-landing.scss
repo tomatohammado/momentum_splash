@@ -15,7 +15,7 @@ section.landing {
 
 
   .container {
-    color: $c-white;
+    // color: $c-white;
     text-align: center;
 
     h2 {
@@ -31,7 +31,27 @@ section.landing {
                    4px 4px $c-red;
     }
   }
-}
+
+  .md-trigger {
+    @include fontsize(30);
+    font-weight: 600;
+    width: 80%;
+    display: inline-block;
+    padding: 2rem .5rem;
+    background: $c-red;
+    cursor: pointer;
+
+    @include breakpoint($bp-small) {
+      width: 31.25%;
+      font-size: 1rem;
+      padding: 1rem .5rem;
+    } // .md-trigger 768px
+
+    .underline {
+      border-bottom: 2px solid $c-white;
+    } // .underline
+  } // .md-trigger
+} // section.landing
 
 
 

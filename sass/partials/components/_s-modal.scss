@@ -1,30 +1,7 @@
-// .modal-trigger {
-.md-trigger {
-
-  width: 80%;
-  @include fontsize(30);
-
-  background: $c-red;
-  padding: 2rem .5rem;
-  display: inline-block;
-  // width: 31.25%;
-  font-weight: 600;
-  cursor: pointer;
-
-  @include breakpoint($bp-small) {
-    width: 31.25%;
-    font-size: 1rem;
-    padding: 1rem .5rem;
-  }
-
-  u {
-    border-bottom: 2px solid $c-white;
-    text-decoration: none;
-  }
-
-}
-
-
+/*
+ * .md-trigger is in the Landing Section of the page, so I put the styles in the
+ *  corresponding SCSS partial
+ */
 
 .md-modal {
   .md-content {
@@ -34,27 +11,24 @@
     background: $c-red;
 
     .logo {
-        float: left;
-      }
-      .md-close {
-        float: right;
-        @include fontsize(50);
-        color: $c-black;
-        text-shadow: none;
-        background: none;
-        padding: 0;
-        border: none;
-        line-height: 1;
+      float: left;
+    }
 
-        padding-top: 5px;
-        padding-right: 5px;
+    .md-close {
+      float: right;
+      @include fontsize(50);
+      color: $c-black;
+      text-shadow: none;
+      background: none;
+      padding: 0;
+      border: none;
+      line-height: 1;
 
-        cursor: pointer;
+      padding-top: 5px;
+      padding-right: 5px;
 
-        &:hover {
-          color: $c-white;
-        }
-      }
+      cursor: pointer;
+    }
 
     .content-wrapper {
       margin: 0 auto;
@@ -64,29 +38,25 @@
       @include breakpoint($bp-small) {
         width: 50%;
       }
+
       h3 {
         @include fontsize(34);
         font-weight: 700;
         color: $c-white;
         background: none;
         opacity: 1;
-
       }
     }
-
-    .center-vert {
-      // top: 0;
-      // transform: none;
-    }
-
-
   } //.md-content asdfa
 }
+
 
 .md-show ~ .md-overlay {
   opacity: 0;
   visibility: hidden;
 }
+
+
 
 form {
   display: inline-block;
@@ -119,11 +89,11 @@ form {
     border: none;
     background: $c-red;
     border-bottom: 2px solid $c-white;
-    color: $c-white;
+    // color: $c-white;
     font: inherit;
     font-size: 1rem;
     line-height: initial;
-    margin-top: 2px;
+    // margin-top: 2px;
   }
 
   .hs_submit {
@@ -140,7 +110,7 @@ form {
       background: $c-white;
       font: inherit;
     }
-  }
+  } //.hs-submit
 
   ::-webkit-input-placeholder {
      color: $c-white;
@@ -158,9 +128,21 @@ form {
      color: $c-white;
   }
 
-}
+
+  // input::-webkit-input-placeholder,
+  // input:-moz-placeholder,
+  // input::-moz-placeholder,
+  // input:-ms-input-placeholder {
+  //    color: $c-white;
+  // }
+
+  // input[placeholder] {
+  //   color: $c-white;
+  // }
+
+} //form
 
 .submitted-message {
-    color: $c-white;
-  }
+  color: $c-white;
+}
 
