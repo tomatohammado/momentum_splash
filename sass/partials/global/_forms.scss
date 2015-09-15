@@ -1,1 +1,89 @@
 // Global Formalize overrides
+
+form {
+    display: inline-block;
+    width: 100%;
+
+    label[placeholder="Enter your Email"] {
+      display: none;
+    }
+    div[data-reactid=".0.1:$0"] {
+      display: inline-block;
+    }
+
+    div[data-reactid=".0.1:$0"]{
+      width: 70%;
+      padding-right: 10px;
+
+    }
+    div[data-reactid=".0.1:$0.$email.$email"] {
+      width: 100%;
+    }
+    ul {
+      float: left;
+      // clear: both;
+      // display: inline-block;
+    }
+
+
+    #email-1f81b7fb-d2ce-4530-a1b6-848bae1a2053 {
+      width: 100%;
+      border: none;
+      background: $c-red;
+      border-bottom: 2px solid $c-white;
+      color: $c-white;
+      font: inherit;
+      font-size: 1rem;
+      line-height: initial;
+    }
+
+    .hs_submit {
+      display: inline-block;
+      width: 30%;
+      input[type="submit"] {
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        // height: 40px;
+        // bottom: 4px;
+        position: relative;
+        color: $c-red;
+        background: $c-white;
+        font: inherit;
+      }
+    } //.hs-submit
+
+    ::-webkit-input-placeholder {
+       color: $c-white;
+    }
+
+    :-moz-placeholder { /* Firefox 18- */
+       color: $c-white;
+    }
+
+    ::-moz-placeholder {  /* Firefox 19+ */
+       color: $c-white;
+    }
+
+    :-ms-input-placeholder {
+       color: $c-white;
+    }
+
+
+        // now my question, why don't this work?!
+    // input::-webkit-input-placeholder,
+    // input:-moz-placeholder,
+    // input::-moz-placeholder,
+    // input:-ms-input-placeholder {
+    //    color: $c-white;
+    // }
+
+    // input[placeholder] {
+    //   color: $c-white;
+    // }
+
+  } //form
+
+  .submitted-message {
+    color: $c-white;
+  }

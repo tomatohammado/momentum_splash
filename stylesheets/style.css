@@ -380,14 +380,14 @@ th {
  * pass true as the second argument.
  *
  */
-.tabs:before, section.landing:before, .clearfix:before, section:before,
+.tabs:before, .clearfix:before, section:before,
 header:before,
-.container:before, .tabs:after, section.landing:after, .clearfix:after, section:after,
+.container:before, .tabs:after, .clearfix:after, section:after,
 header:after,
 .container:after {
   content: "";
   display: table; }
-.tabs:after, section.landing:after, .clearfix:after, section:after,
+.tabs:after, .clearfix:after, section:after,
 header:after,
 .container:after {
   clear: both; }
@@ -451,51 +451,84 @@ body {
   padding: 15px; }
 
 section.landing {
-  margin: 0;
   border: 40px solid #ffffff;
+  margin: 0;
   background: url(../../images/background.jpg) no-repeat center center fixed;
-  background-size: cover; }
-  section.landing .container {
-    text-align: center; }
-    section.landing .container h2 {
-      font-size: 60px;
-      font-size: 3.75rem;
-      font-weight: 700;
-      margin: 0 0 1rem 0;
-      text-shadow: 1px 1px #ff4738, 1.5px 1.5px #ff4738, 2px 2px #ff4738, 2.5px 2.5px #ff4738, 3px 3px #ff4738, 3.5px 3.5px #ff4738, 4px 4px #ff4738; }
-  section.landing .md-trigger {
-    font-size: 30px;
-    font-size: 1.875rem;
-    font-weight: 600;
-    width: 80%;
-    display: inline-block;
-    padding: 2rem .5rem;
-    background: #ff4738;
-    cursor: pointer; }
+  background-size: cover;
+  text-align: center; }
+  section.landing h2 {
+    font-size: 50px;
+    font-size: 3.125rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    text-shadow: 1px 1px #ff4738, 1.5px 1.5px #ff4738, 2px 2px #ff4738, 2.5px 2.5px #ff4738, 3px 3px #ff4738, 3.5px 3.5px #ff4738, 4px 4px #ff4738; }
+    @media (min-width: 31.25em) {
+      section.landing h2 {
+        font-size: 54px;
+        font-size: 3.375rem; } }
+    .no-mediaqueries section.landing h2 {
+      font-size: 54px;
+      font-size: 3.375rem; }
     @media (min-width: 48em) {
-      section.landing .md-trigger {
-        width: 31.25%;
-        font-size: 1rem;
-        padding: 1rem .5rem; } }
-    .no-mediaqueries section.landing .md-trigger {
-      width: 31.25%;
-      font-size: 1rem;
-      padding: 1rem .5rem; }
-    section.landing .md-trigger .underline {
+      section.landing h2 {
+        font-size: 60px;
+        font-size: 3.75rem; } }
+    .no-mediaqueries section.landing h2 {
+      font-size: 60px;
+      font-size: 3.75rem; }
+  section.landing button.action {
+    font-size: 18px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    width: 60%;
+    border: none;
+    border-radius: 0;
+    display: inline-block;
+    padding: 1.75rem .5rem;
+    background: #ff4738;
+    text-shadow: none; }
+    @media (min-width: 31.25em) {
+      section.landing button.action {
+        font-size: 20px;
+        font-size: 1.25rem;
+        padding: 1.5rem .5rem;
+        width: 50%; } }
+    .no-mediaqueries section.landing button.action {
+      font-size: 20px;
+      font-size: 1.25rem;
+      padding: 1.5rem .5rem;
+      width: 50%; }
+    @media (min-width: 48em) {
+      section.landing button.action {
+        font-size: 24px;
+        font-size: 1.5rem;
+        width: 50%; } }
+    .no-mediaqueries section.landing button.action {
+      font-size: 24px;
+      font-size: 1.5rem;
+      width: 50%; }
+    @media (min-width: 80em) {
+      section.landing button.action {
+        width: 25%;
+        min-width: 480px; } }
+    .no-mediaqueries section.landing button.action {
+      width: 25%;
+      min-width: 480px; }
+    section.landing button.action .underline {
       border-bottom: 2px solid #ffffff; }
 
 /*
  * .md-trigger is in the Landing Section of the page, so I put the styles in the
  *  corresponding SCSS partial
  */
-section.modal .md-modal .md-content {
+section.modal .md-content {
   height: 100%;
   width: 100%;
   padding-bottom: 15px;
   background: #ff4738; }
-  section.modal .md-modal .md-content .logo {
+  section.modal .md-content .logo {
     float: left; }
-  section.modal .md-modal .md-content .md-close {
+  section.modal .md-content .md-close {
     float: right;
     font-size: 50px;
     font-size: 3.125rem;
@@ -508,38 +541,36 @@ section.modal .md-modal .md-content {
     padding-top: 5px;
     padding-right: 5px;
     cursor: pointer; }
-  section.modal .md-modal .md-content .container {
+  section.modal .md-content .container {
     color: #000000; }
     @media (min-width: 64em) {
-      section.modal .md-modal .md-content .container {
+      section.modal .md-content .container {
         width: 50%; } }
-    .no-mediaqueries section.modal .md-modal .md-content .container {
+    .no-mediaqueries section.modal .md-content .container {
       width: 50%; }
-    section.modal .md-modal .md-content .container h3 {
+    section.modal .md-content .container h3 {
       font-size: 34px;
       font-size: 2.125rem;
       font-weight: 700;
       color: #ffffff;
       background: none;
       opacity: 1; }
-section.modal .md-show ~ .md-overlay {
-  opacity: 0;
-  visibility: hidden; }
-section.modal form {
+
+form {
   display: inline-block;
   width: 100%; }
-  section.modal form label[placeholder="Enter your Email"] {
+  form label[placeholder="Enter your Email"] {
     display: none; }
-  section.modal form div[data-reactid=".0.1:$0"] {
+  form div[data-reactid=".0.1:$0"] {
     display: inline-block; }
-  section.modal form div[data-reactid=".0.1:$0"] {
+  form div[data-reactid=".0.1:$0"] {
     width: 70%;
     padding-right: 10px; }
-  section.modal form div[data-reactid=".0.1:$0.$email.$email"] {
+  form div[data-reactid=".0.1:$0.$email.$email"] {
     width: 100%; }
-  section.modal form ul {
+  form ul {
     float: left; }
-  section.modal form #email-1f81b7fb-d2ce-4530-a1b6-848bae1a2053 {
+  form #email-1f81b7fb-d2ce-4530-a1b6-848bae1a2053 {
     width: 100%;
     border: none;
     background: #ff4738;
@@ -548,10 +579,10 @@ section.modal form {
     font: inherit;
     font-size: 1rem;
     line-height: initial; }
-  section.modal form .hs_submit {
+  form .hs_submit {
     display: inline-block;
     width: 30%; }
-    section.modal form .hs_submit input[type="submit"] {
+    form .hs_submit input[type="submit"] {
       width: 100%;
       border: none;
       border-radius: 0;
@@ -559,17 +590,18 @@ section.modal form {
       color: #ff4738;
       background: #ffffff;
       font: inherit; }
-  section.modal form ::-webkit-input-placeholder {
+  form ::-webkit-input-placeholder {
     color: #ffffff; }
-  section.modal form :-moz-placeholder {
+  form :-moz-placeholder {
     /* Firefox 18- */
     color: #ffffff; }
-  section.modal form ::-moz-placeholder {
+  form ::-moz-placeholder {
     /* Firefox 19+ */
     color: #ffffff; }
-  section.modal form :-ms-input-placeholder {
+  form :-ms-input-placeholder {
     color: #ffffff; }
-section.modal .submitted-message {
+
+.submitted-message {
   color: #ffffff; }
 
 img {
@@ -646,7 +678,7 @@ header {
 
 .r-wbr {
   display: inline; }
-  @media (min-width: 48em) {
+  @media (min-width: 31.25em) {
     .r-wbr {
       display: block; } }
   .no-mediaqueries .r-wbr {
