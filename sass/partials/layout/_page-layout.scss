@@ -2,6 +2,16 @@
   box-sizing: border-box;
 }
 
+section,
+header,
+.container {
+  @extend %clearfix;
+}
+
+header {
+  padding: 15px;
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
@@ -28,3 +38,5 @@
     display: block;
   }
 }
+
+

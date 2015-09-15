@@ -18,7 +18,8 @@ $(document).ready(function() {
   resizer();
 
   $('html').flowtype({
-     minimum   : 500,
+     // minimum   : 500,
+     minimum   : 768,
      maximum   : 1200,
      fontRatio : 60
   });

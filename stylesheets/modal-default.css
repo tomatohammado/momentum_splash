@@ -62,7 +62,6 @@ perspective effects (not including the modals and the overlay).
 /* Content styles */
 .md-content {
   color: #fff;
-  background: #e74c3c;
   position: relative;
   margin: 0 auto;
 }
@@ -79,7 +78,6 @@ perspective effects (not including the modals and the overlay).
 }
 
 .md-content > div {
-  margin: 0;
   font-weight: 300;
 }
 
