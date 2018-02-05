@@ -452,7 +452,7 @@ body {
 section.landing {
   border: 40px solid #ffffff;
   margin: 0;
-  background: url(../../images/background.jpg) no-repeat center center fixed;
+  background: url(../images/background.jpg) no-repeat center center fixed;
   background-size: cover;
   text-align: center; }
   section.landing h2 {
